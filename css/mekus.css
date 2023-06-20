@@ -16,7 +16,7 @@ body{
 .hero{font-size: 20px;}
 div.text-width{width: 10em;}  
 
-p.mt-2{
-    height: 150px;
+.details{
+    height: 166px;
     overflow: hidden;
 }
