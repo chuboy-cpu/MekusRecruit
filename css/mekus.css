@@ -40,3 +40,7 @@ div.text-width{width: 10em;}
     background: #76adff; 
     border-radius: 15px;
 }
+
+li{
+    list-style: none;
+}
