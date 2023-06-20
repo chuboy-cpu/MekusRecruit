@@ -1,4 +1,17 @@
+@font-face {
+    font-family: "Andriod Eulicid";
+    src: url("../font/Eulicid/Euclid\ Circular\ A\ Regular.ttf");
+}
 
-h1{font-size: 50px;}
-.hero{font-size: 24px;}
+body{
+    font-family: "Andriod Eulicid";
+}
+
+.login{
+    background-color: rgb(205, 228, 255);
+    color: #0D6EFD;
+}
+
+.fs-60{font-size: 56px;}
+.hero{font-size: 20px;}
 div.text-width{width: 10em;}  
