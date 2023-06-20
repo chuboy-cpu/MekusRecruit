@@ -23,5 +23,20 @@ div.text-width{width: 10em;}
 
 .modal-details{
     height: 410px;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+.modal-details::-webkit-scrollbar{
+    width: 5px;
+    margin-inline-start: 10px;
+}
+
+.modal-details::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+.modal-details::-webkit-scrollbar-thumb {
+    background: #76adff; 
+    border-radius: 15px;
 }
