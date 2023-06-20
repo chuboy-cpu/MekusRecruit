@@ -20,3 +20,8 @@ div.text-width{width: 10em;}
     height: 166px;
     overflow: hidden;
 }
+
+.modal-details{
+    height: 410px;
+    overflow: scroll;
+}
