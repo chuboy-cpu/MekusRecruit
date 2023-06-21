@@ -12,6 +12,11 @@ body{
     color: #0D6EFD;
 }
 
+.login:hover{
+    background-color: #0D6EFD;
+    color: #f1f1f1;
+}
+
 .fs-60{font-size: 56px;}
 .hero{font-size: 20px;}
 div.text-width{width: 10em;}  

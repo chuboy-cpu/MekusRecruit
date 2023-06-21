@@ -5,3 +5,7 @@ div.entry{
 input{
     outline: none;
 }
+
+.form-control:focus{
+    box-shadow: none;
+}
