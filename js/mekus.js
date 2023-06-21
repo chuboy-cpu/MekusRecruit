@@ -8,3 +8,7 @@ function modal (e){
     modal_details = document.querySelector('.modal-details');
     modal_details.innerHTML = document.querySelector(`#writeup${e.id} p`).innerHTML;
 }
+
+AOS.init({
+    duration: 1200,
+})

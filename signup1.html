@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/mekus.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
     <div class="container-xl">
 
         <!-- LOGO -->
-        <div class="pb-5">
+        <div class="pb-5" data-aos="fade-down">
             <a href="./index.html" class="navbar-brand">
                 <div class="d-flex align-items-center">
                     <div>
@@ -26,12 +27,12 @@
 
         <!-- SIGN UP INTRO -->
         <section class="mt-5 rounded-5">
-            <h1 class="text-center">Sign Up as a Developer or Recruiter</h1>
+            <h1 class="text-center" data-aos="fade-down">Sign Up as a Developer or Recruiter</h1>
 
             <div class="row mt-5 justify-content-center">
 
                 <!-- DEVELOPERS CARD -->
-                <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="col-sm-3 mb-3 mb-sm-0" data-aos="fade-right">
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title text-primary pb-4">Register as a Developer</h3>
@@ -41,23 +42,25 @@
                     </div>
                 </div>
                 <!-- RECRUITERS CARD -->
-                <div class="col-sm-3">
+                <div class="col-sm-3" data-aos="fade-left">
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title text-primary pb-4">Register as a Recruiter</h3>
                             <p class="card-text">Are you a recruiter hiring developers?</p>
-                            <a href="#" class="btn btn-primary carrd">Sign Up</a>
+                            <a href="./signup3.html" class="btn btn-primary carrd">Sign Up</a>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <p class="text-end mt-5">Already have an account? <a href="#" class="text-decoration-none">Login</a></p>
+            <p class="text-end mt-5" data-aos="flip-left">Already have an account? <a href="#" class="text-decoration-none">Login</a></p>
         </section>
 
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/mekus.js"></script>
 </body>
 </html>
