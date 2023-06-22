@@ -5,6 +5,7 @@
 
 body{
     font-family: "Andriod Eulicid";
+    overflow-x: hidden;
 }
 
 .login{
