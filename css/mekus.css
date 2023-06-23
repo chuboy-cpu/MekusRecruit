@@ -50,28 +50,3 @@ div.text-width{width: 10em;}
 li{
     list-style: none;
 }
-
-/* CARD FOR SIGN UP 1*/
-.card{
-    transition: 0.5s ease-out;
-}
-
-a.carrd{
-    transform: translate(-50%, 125%);
-    width: 40%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    opacity: 0;
-    transition: 0.3s ease-out;
-}
-
-.card:hover {
-    border-color: #0D6EFD;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-   
-.card:hover a.carrd {
-    transform: translate(-50%, 50%);
-    opacity: 1;
-}
