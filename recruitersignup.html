@@ -6,6 +6,7 @@
     <title>MekusRecruit</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mekus.css">
     <link rel="stylesheet" href="./css/signup.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -26,36 +27,38 @@
                         <p class="mt-3 p-0 fw-semibold ms-1 fs-4">ekus<span class="text-primary fw-normal">Recruit</span></p>
                     </div>
                 </a>
-                
-                <!-- HEADER -->
+
+                <!--HEADER-->
                 <h1 class="mb-3">Hi, let's get started!</h1>
-                <p class="mb-5">Showcase your skills and experience, and connect with potential job opportunities.</p>
+                <p class="mb-5"> Search for developers, view their profiles, and schedule interviews.</p>
 
                 <!-- SIGN UP FORM -->
                 <div class="col-6 mb-5">
-                    <div class="border rounded p-4">
+                    <div class="border rounded p-4 signupform">
 
                         <form autocomplete="off" action="" method="post" class="row g-3">
-                            <div class="col-12">
-                                <label for="fname" class="form-label">First Name</label>
+                            <div class="col-md-12">
+                                <label for="cname" class="form-label">Company Name</label>
                                 <div class="entry">
-                                    <input type="text" class="border-0 w-75" id="fname" placeholder="Jaden">
+                                    <input type="text" class="border-0 w-75" id="cname" placeholder="Mekus limited">
                                 </div>
                             </div>
                             <div class="col-12">
-                                <label for="lname" class="form-label">Last Name</label>
-                                <div class="entry">
-                                    <input type="text" class="border-0 w-75" id="lname" placeholder="Joe">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email Address</label>
+                                <label for="email" class="form-label">Company mailing Address</label>
                                 <div class="entry d-flex justify-content-between">
                                     <input type="text" class="border-0 w-75" id="email" placeholder="recruit@gmail.com">
 
                                     <div><img src="./images/icons8-check-mark-48.png" alt="check" width="18"></div>
                                 </div>
                             </div>
+
+                            <div class="col-md-12">
+                                <label for="address" class="form-label">Company Address</label>
+                                <div class="entry">
+                                    <input type="text" class="border-0 w-75" id="address" placeholder="12, Housing Estate New Layout">
+                                </div>
+                            </div>
+                        
                             <div class="col-12 mt-4">
                                 <label for="password" class="form-label mb-0">Password</label>
                                 <div class="entry d-flex justify-content-between">
@@ -73,23 +76,20 @@
                                 </div>
                             </div>
                             <div class="col-12 mb-3">
-                                <label for="inputState" class="form-label">What Area of our Stark are you interested in?</label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>Data Analyst</option>
-                                    <option>Front end Developer</option>
-                                    <option>Back end Developer</option>
-                                    <option>Project Manager</option>
-                                </select>
+                                <label for="iso" class="form-label">ISO Certification Number</label>
+                                <div class="entry">
+                                    <input type="text" class="border-0 w-75" id="iso" placeholder="1234785">
+                                </div>
                             </div>
                             <div class="col-12 text-center">
-                                <a href="#"><button type="button" class="col-12 btn btn-primary py-3 rounded-5 mb-3">Sign Up</button></a>
+                                <button type="button" class="col-12 btn btn-primary py-3 rounded-5 mb-3 signup">Sign Up</button>
                             </div>
                         </form>
 
                     </div>
 
                 </div>
-            </div>
+            </div>    
         </div>
     </div>
     
