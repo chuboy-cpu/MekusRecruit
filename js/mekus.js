@@ -14,6 +14,20 @@ AOS.init({
     once: true
 })
 
+function password_visibility(e) {
+    let eye = document.querySelector(`#${e.id} img`);
+    let input = document.querySelector(`div#${e.id} + input`);
+
+    if (input.type === "password") {
+      input.type = "text";
+      eye.src = "./images/hide.png";
+    } else {
+      input.type = "password";
+      eye.src = "./images/vision.png";
+    }
+  }
+
+
 function signup(){
     let email = document.getElementById('email').value
     alert(email);
