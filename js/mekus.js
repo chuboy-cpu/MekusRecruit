@@ -33,6 +33,19 @@ AOS.init({
     once: true
 })
 
+
+function check_email(){
+    let email = document.getElementById("email")
+
+    if (email.value != ""){
+        document.getElementById("check").style.display = "block"
+    }
+    else{
+        document.getElementById("check").style.display = "none"
+    }
+}
+
+
 function password_visibility(e) {
     let eye = document.querySelector(`#${e.id} img`);
     let input = document.querySelector(`div#${e.id} + input`);

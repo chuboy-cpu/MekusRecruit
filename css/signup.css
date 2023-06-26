@@ -49,3 +49,7 @@ input{
 .form-select:focus{
     box-shadow: none;
 }
+
+#check{
+    display: none;
+}
