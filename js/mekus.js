@@ -12,3 +12,18 @@ function modal (e){
 AOS.init({
     duration: 1000,
 })
+
+function signup(){
+    let email = document.getElementById('email').value
+    alert(email);
+
+    var obj ={
+        
+    }
+
+    obj[email_fname] = "nil";
+    obj[email_lname] = "nil";
+    obj[email_email] = email;
+
+    alert(obj[email_email])
+}
