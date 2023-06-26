@@ -11,6 +11,7 @@ function modal (e){
 
 AOS.init({
     duration: 1000,
+    once: true
 })
 
 function signup(){
