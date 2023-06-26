@@ -6,9 +6,7 @@ function toast(){
 
   if (toastTrigger) {
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-    toastTrigger.addEventListener('click', () => {
-      toastBootstrap.show()
-    })
+    toastBootstrap.show();
   }
 }
 
@@ -29,6 +27,19 @@ AOS.init({
     duration: 1000,
     once: true
 })
+
+
+function check_email(){
+    let email = document.getElementById("email")
+
+    if (email.value != ""){
+        document.getElementById("check").style.display = "block"
+    }
+    else{
+        document.getElementById("check").style.display = "none"
+    }
+}
+
 
 function password_visibility(e) {
     let eye = document.querySelector(`#${e.id} img`);
