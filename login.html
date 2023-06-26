@@ -37,20 +37,20 @@
     
                         <form autocomplete="off" action="" method="post" class="row g-4">
                             <div class="col-md-12">
-                                <label for="uname" class="form-label">Email Address</label>
+                                <label for="email" class="form-label">Email Address</label>
                                 <div class="entry d-flex justify-content-between">
-                                    <input type="email" class="border-0 w-75" id="uname" placeholder="work@email.com">
+                                    <input type="email" class="border-0 w-75" id="email" placeholder="work@email.com" onfocusout="check_email()">
 
-                                    <div><img src="./images/icons8-check-mark-48.png" alt="checkmark" width="18"></div>
+                                    <div><img src="./images/icons8-check-mark-48.png" id="check" alt="checkmark" width="18"></div>
                                 </div>
                             </div>
                             
                             <div class="col-12">
-                                <label for="cpassword" class="form-label">Enter Password</label>
-                                <div class="entry d-flex justify-content-between">
-                                    <input type="password" class="border-0" id="cpassword" placeholder="........">
+                                <label for="password" class="form-label">Enter Password</label>
+                                <div class="entry d-flex flex-row-reverse justify-content-between">
+                                    <div type="button" id="eye1" onclick="password_visibility(this)"><img src="./images/vision.png" alt="eye" width="18"></div>
 
-                                    <div><img src="./images/vision.png" alt="eye" width="18"></div>
+                                    <input type="password" class="border-0 w-75 p-0" id="password" placeholder="........">
                                 </div>
                             </div>
                             
@@ -67,6 +67,7 @@
         </div>
     </div>
     
-    <script src="./Bootstrap/js/bootstrap.bundle.js"></script> 
+    <script src="./Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/mekus.js"></script> 
 </body>
 </html>
