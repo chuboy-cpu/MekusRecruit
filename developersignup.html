@@ -6,6 +6,7 @@
     <title>MekusRecruit</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mekus.css">
     <link rel="stylesheet" href="./css/signup.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -81,9 +82,31 @@
                                     <option>Project Manager</option>
                                 </select>
                             </div>
-                            <div class="col-12 text-center" onclick="signup()">
-                                <a href="#"><button type="button" class="col-12 btn btn-primary py-3 rounded-5 mb-3">Sign Up</button></a>
+
+                            
+                            <button type="button" id="liveToastBtn" class="col-12 btn btn-primary py-3 rounded-5 mb-3" onclick="toast()">Sign Up</button>
+
+                            <div class="toast-container position-fixed top-0 end-0 p-3">
+                                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+
+                                    <div class="toast-body p-0">
+                                        <div class="d-flex flex-row pb-2 ps-4 mt-3">
+
+                                            <div>
+                                                <img src="./images/check-circle-solid-24.png" alt="checkmark" width="=22">
+                                            </div>
+                                            <div class="ms-3 me-5">
+                                                <h5 class="">Success</h5>
+                                                <p>Account successfully Created</p>
+                                            </div>
+                                            <button type="button" class="btn-close ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                             </div>
+
                         </form>
 
                     </div>

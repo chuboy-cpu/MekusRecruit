@@ -1,3 +1,18 @@
+
+// TOAST
+function toast(){
+  const toastTrigger = document.getElementById('liveToastBtn')
+  const toastLiveExample = document.getElementById('liveToast')
+
+  if (toastTrigger) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastTrigger.addEventListener('click', () => {
+      toastBootstrap.show()
+    })
+  }
+}
+
+// MODAL
 function modal (e){
     modal_pic = document.querySelector('.modal-pic');
     modal_pic.src = document.querySelector(`#img${e.id}`).src;
@@ -9,6 +24,7 @@ function modal (e){
     modal_details.innerHTML = document.querySelector(`#writeup${e.id} p`).innerHTML;
 }
 
+// ON SCROLL ANIMATIONS
 AOS.init({
     duration: 1000,
     once: true
