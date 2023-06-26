@@ -5,11 +5,14 @@ function toast(){
   const toastLiveExample = document.getElementById('liveToast')
 
   if (toastTrigger) {
-    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-    toastTrigger.addEventListener('click', () => {
-      toastBootstrap.show()
-    })
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+    toastBootstrap.show()
   }
+
+  const myToastEl = document.getElementById('liveToast')
+    myToastEl.addEventListener('hidden.bs.toast', () => {
+      window.location.href = './login.html'
+    })
 }
 
 // MODAL
