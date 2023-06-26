@@ -12,12 +12,6 @@
     overflow-x: hidden;
 }
 
-.body-with-both-sidebars{
-    margin-inline-start: 250px;
-    margin-inline-end: 300px;
-    overflow-x: hidden;
-}
-
 .profile{
     background-color: #F8F8F8;
 }
@@ -41,4 +35,16 @@ body::-webkit-scrollbar {
 .sidebar-txt{
     color: #64748B;
     font-size: 15px;
+}
+
+.pb-sidebar{
+    padding-block-end: 400px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .body{
+        margin-inline-start: 0px;
+    }
+
 }

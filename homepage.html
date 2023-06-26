@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="./css/mekus.css">
     <link rel="stylesheet" href="./css/homepage.css">
 </head>
+
 <body class="d-flex">
+
     <div class="container position-fixed sidebar d-none d-md-block">
         <div class="row ps-3 pt-4">
             <div class="col-12 profile d-flex align-items-center rounded-3 py-2">
                 <div>
-                    <img src="./images/cloud computing.jpg" alt="profile" width="55">
+                    <img src="./images/cloud computing.jpg" class="rounded-2" alt="profile" width="55" height="47">
                 </div>
 
                 <div class="ms-3 me-2">
-                    <h6 class="m-0">Joe J.</h6>
-                    <p class="m-0">Data Analyst</p>
+                    <h6 class="mb-0 mt-1 fw-semibold">Joe J.</h6>
+                    <p class="mb-0 mt-1">Data Analyst</p>
                 </div>
 
             </div>
 
-            <div class="col px-3 profile mt-3 pt-4 pb-10 rounded-3 d-flex flex-column gap-2">
+            <div class="col px-3 profile mt-3 pt-4 pb-sidebar rounded-3 d-flex flex-column gap-2">
                 <a href="#"><div class="d-flex rounded-3 py-2 pointer" active="true">
                     <div class="mx-3 fit-height py-1">
                         <img src="./images/profile.svg" alt="profile" class="" width="24">
@@ -53,8 +55,84 @@
                     <p class="py-1 m-0 sidebar-txt">Connect</p>
                 </div></a>
 
+                <div class="d-flex rounded-3 py-2 pointer">
+                    <div class="mx-3 fit-height py-1">
+                        <img src="./images/bx-cog.svg" alt="setting" width="24">
+                    </div>
+                    <p class="py-1 m-0 sidebar-txt">Settings</p>
+                </div>
             </div>
         </div>
+    </div>
+
+
+
+    <div class="container-fluid body">
+
+        <!-- RESPONSIVE NAVBAR FOR SMALL AND MEDIUM SCREEN -->
+        <nav class="navbar navbar-expand-md d-md-none">
+            <div class="container-fluid justify-content-end">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="row ps-3 pt-4">
+                    <div class="col-11 profile d-flex rounded-3 py-2">
+                        <div>
+                            <img src="./images/cloud computing.jpg" class="rounded-2" alt="profile" width="55" height="47">
+                        </div>
+        
+                        <div class="ms-3 me-2">
+                            <h6 class="mb-0 mt-1 fw-semibold">Joe J.</h6>
+                            <p class="mb-0 mt-1">Data Analyst</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-11 px-3 profile mt-3 pt-4 pb-5 rounded-3 d-flex flex-column gap-2">
+                        <a href="#"><div class="d-flex rounded-3 py-2 pointer" active="true">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/profile.svg" alt="profile" class="" width="24">
+                            </div>
+                            <p class="py-1 m-0">Profile</p>
+                        </div></a>
+        
+                        <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/notification.svg" alt="notification" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Notification</p>
+                        </div></a>
+
+                        <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/message.svg" alt="message" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Message</p>
+                        </div></a>
+        
+                        <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/search.svg" alt="Search" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Connect</p>
+                        </div></a>
+
+                        <div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/bx-cog.svg" alt="setting" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Settings</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+          <!-- your code should go here -->
+          
     </div>
 
     <script src="./Bootstrap/js/bootstrap.bundle.js"></script>  
