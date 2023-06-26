@@ -50,3 +50,15 @@ div.text-width{width: 10em;}
 li{
     list-style: none;
 }
+
+@media screen and (max-width: 786px) {
+    .fs-60{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fs-60{
+        font-size: 37px;
+    }
+}
