@@ -88,3 +88,8 @@ function signup(){
 
     alert(obj[email_email])
 }
+
+function screen_height(){
+    let height = window.innerHeight;
+    document.getElementById("contact-box").style.maxHeight = height + "px";
+}
