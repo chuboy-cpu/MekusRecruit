@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/homepage.css">
 </head>
 
-<body class="d-flex">
+<body class="d-flex" onload="screen_height()" onresize="screen_height()">
 
     <div class="container position-fixed sidebar d-none d-md-block">
         <div class="row ps-3 pt-4">
@@ -143,17 +143,37 @@
 
         <!-- your code should go here -->
 
-        <div class="row border">
-            <div class="col-lg-5 col-5 border border-top-0 ">
-                <div class="mt" id="contact-box">
+        <div class="row">
+            <div class="col-lg-5 col-5" id="contact-box">
+                <div class=" border">
+                    <div class="d-flex justify-content-between px-2 mt-3 mb-3">
+                        <h5 class="ps-1 pt-2 fw-semibold">Messages</h5>
+                        <div class="d-flex">
+                            <div class="pt-2 pb-2 ps-3 pe-3  sb">
+                                <>
+                            </div>
+                            <div class="pt-2 pb-2 ps-3 pe-3  sb">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around pb-1 py-1 rounded-5 ms-2 border" style="width: 95%;">
+                        <input class="search-bar" id="filter" onclick="green()" oninput="filter_cl()" type="text" placeholder="Search or start a new chat">
+                        <div class="sb pb-1 mt-1 ps-2 pe-2" onclick="refresh_cl()">
+                        <img src="./images/search.png" alt="" style="width: 12px;" id="search-icon">
+                        </div>
+                    </div>
+                </div
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="1">
+                <div class="mt" >
+
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="1">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/male3.jpeg" alt="" class="w-24">
+                                <img src="./images/dp1.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
-                                <h6 class="p-0 m-0 d-name">Emeka</h6>
+                                <h6 class="p-0 m-0 d-name fw-semibold">Emeka</h6>
                                 <p class="p-0 m-0 fs-14 d-text">Yoo nigga</p>
                             </div>  
                         </div>
@@ -163,13 +183,13 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="2">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="2">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/male.webp" alt="" class="w-24">
+                                <img src="./images/dp2.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
-                                <h6 class="p-0 m-0 d-name">King</h6>
+                                <h6 class="p-0 m-0 d-name fw-semibold">King</h6>
                                 <p class="p-0 m-0 fs-14 d-text">Where are you ?</p>
                             </div>  
                         </div>
@@ -180,13 +200,13 @@
                     </div>
 
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="4">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="4">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/male2.webp" alt="" class="w-24">
+                                <img src="./images/dp3.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
-                                <h6 class="p-0 m-0 d-name">Mr Braide</h6>
+                                <h6 class="p-0 m-0 d-name fw-semibold">Mr Braide</h6>
                                 <p class="p-0 m-0 fs-14 d-text">Copernicus !!!</p>
                             </div>  
                         </div>
@@ -198,13 +218,13 @@
 
 
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="9">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="9">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/male7.jpeg" alt="" class="w-24">
+                                <img src="./images/dp4.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
-                                <h6 class="p-0 m-0 d-name">Melody</h6>
+                                <h6 class="p-0 m-0 d-name fw-semibold">Melody</h6>
                                 <p class="p-0 m-0 fs-14 d-text">50 gig</p>
                             </div>  
                         </div>
@@ -214,13 +234,13 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="10">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="10">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/male8.png" alt="" class="w-24">
+                                <img src="./images/dp5.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
-                                <h6 class="p-0 m-0 d-name">Fidelix</h6>
+                                <h6 class="p-0 m-0 d-name fw-semibold">Fidelix</h6>
                                 <p class="p-0 m-0 fs-14 d-text">Enjoy life</p>
                             </div>  
                         </div>
@@ -231,13 +251,13 @@
                     </div>
 
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="13">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="13">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/female3.jpeg" alt="" class="w-24">
+                                <img src="./images/dp6.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
-                                <h6 class="p-0 m-0 d-name">Chinenye</h6>
+                                <h6 class="p-0 m-0 d-name fw-semibold">Chinenye</h6>
                                 <p class="p-0 m-0 fs-14 d-text">Emeka</p>
                             </div>  
                         </div>
@@ -248,10 +268,10 @@
                     </div>
 
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="15">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="15">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/female4.jpeg" alt="" class="w-24">
+                                <img src="./images/dp7.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
                                 <h6 class="p-0 m-0 d-name fw-semibold">Kobi</h6>
@@ -264,10 +284,10 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)" id="16">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="16">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/female5.webp" alt="" class="w-24">
+                                <img src="./images/dp8.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
                                 <h6 class="p-0 m-0 d-name fw-semibold">Karina</h6>
@@ -281,10 +301,10 @@
                     </div>
 
 
-                    <div class="d-flex justify-content-between px-2 py-2 mt-1" onclick="open_chat(this)"cid="18">
+                    <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)"cid="18">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
-                                <img src="./images/female7.webp" alt="" class="w-24">
+                                <img src="./images/dp9.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
                                 <h6 class="p-0 m-0 d-name fw-semibold">Ella</h6>
@@ -317,7 +337,7 @@
             </div>
 
 
-            <div class="col-lg-8 col align-items-end border p-0 flex-column-reverse" id="chat-body-open">
+            <div class="col-lg-8 d-none col align-items-end border p-0 flex-column-reverse" id="chat-body-open">
                 <div class="bg-white d-flex border chat-area w-100" id="input">
                     <div class="pt-2 pb-2 ps-3 pe-3 ms-1 sb my-1">
                         <img src="./images/happiness.png" alt="">
@@ -332,11 +352,11 @@
                         <img src="./images/microphone.png" alt="" id="send-btn" >
                     </div>
                </div>
-                <div id="chat-box" class="w-100 d-flex flex-column">
+               <div id="chat-box" class="w-100 d-flex flex-column">
 
-                </div>
+               </div>
                 
-             </div>
+            </div>
 
         </div>
           
