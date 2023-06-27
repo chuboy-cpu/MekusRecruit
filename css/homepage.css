@@ -1,0 +1,44 @@
+.sidebar{
+    width: 250px;
+}
+
+.sidebar a, .navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.body{
+    margin-inline-start: 250px;
+    overflow-x: hidden;
+}
+
+.body-with-both-sidebars{
+    margin-inline-start: 250px;
+    margin-inline-end: 300px;
+    overflow-x: hidden;
+}
+
+.profile{
+    background-color: #F8F8F8;
+}
+
+div[active="true"], .neworder{
+    color: #0D6EFD;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.fit-height{ height: fit-content;}
+
+.sidebar-txt{
+    color: #64748B;
+    font-size: 15px;
+}
