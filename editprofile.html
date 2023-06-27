@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MekusRecruit</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mekus.css">
+    <link rel="stylesheet" href="./css/editprofile.css">
+</head>
+<body>
+
+    <div class="container rounded bg-white mt-3 mb-3">
+
+        <div class="row">
+
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" width="150px" src="./images/profile picture.jpg">
+                    <span class="font-weight-bold">Jaden</span>
+                    <span class="text-black-50">jaden@mail.com</span><span></span>
+                </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Set Up Profile</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label class="labels">Name</label>
+                            <input type="text" class="form-control" placeholder="Jaden" value="">
+                        </div>
+                            
+                        <div class="col-md-12">
+                            <label class="labels">Surname</label>
+                            <input type="text" class="form-control" value="" placeholder="Joe">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Mobile Number</label>
+                            <input type="text" class="form-control" placeholder="+234 806 921 6724" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Email</label>
+                            <input type="text" class="form-control" placeholder="jaden@mail.com" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels">Address</label>
+                            <input type="text" class="form-control" placeholder="12 Housing Estate, Ph" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="about" class="labels">About</label>
+                            <textarea id="about" name="about" rows="4" cols="50" class="form-control" placeholder="John Doe is a specialist for organizing data related to sales numbers, market research..."></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="tools" class="labels">Tools</label>
+                            <textarea id="tools" name="tools" rows="4" cols="50" class="form-control" placeholder="Works with SQL, Microsoft Excel, SPSS & VBA and Jupyter Notebooks"></textarea>
+                        </div>
+                    </div>
+                   
+                    </div>
+                    <div class="text-center">
+
+                        <button type="button" id="liveToastBtn" class="col-9 btn btn-primary py-2 rounded-5 mb-3" onclick="toasty()">Save Profile</button>
+
+                        <div class="toast-container position-fixed top-0 end-0 mt-2">
+                            <div id="liveToastP" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+
+                                <div class="toast-body p-0">
+                                    <div class="d-flex flex-row pb-2 ps-4 mt-3">
+
+                                        <div>
+                                            <img src="./images/check-circle-solid-24.png" alt="checkmark" width="=22">
+                                        </div>
+                                        <div class="ms-3 me-5">
+                                            <h5 class="text-start">Success</h5>
+                                            <p>Profile has been Updated</p>
+                                        </div>
+                                        <button type="button" class="btn-close ms-4" data-bs-dismiss="toast" aria-label="Close"></button>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="./Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/mekus.js"></script>
+</body>
+</html>
