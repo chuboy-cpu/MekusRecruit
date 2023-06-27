@@ -145,28 +145,25 @@
 
         <div class="row">
             <div class="col-lg-5 col-5" id="contact-box">
-                <div class=" border">
+
+                <div class="stickyy">
                     <div class="d-flex justify-content-between px-2 mt-3 mb-3">
                         <h5 class="ps-1 pt-2 fw-semibold">Messages</h5>
-                        <div class="d-flex">
-                            <div class="pt-2 pb-2 ps-3 pe-3  sb">
-                                <>
-                            </div>
-                            <div class="pt-2 pb-2 ps-3 pe-3  sb">
-                                
-                            </div>
-                        </div>
+
+                        <div type="button" class="mt-2"><img src="./images/new-message.svg" alt="" width="24"></div>
                     </div>
-                    <div class="d-flex justify-content-around pb-1 py-1 rounded-5 ms-2 border" style="width: 95%;">
+                </div>
+
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="d-flex justify-content-around pb-1 py-1 rounded-5 ms-2 border border-primary" style="width: 93%;">
                         <input class="search-bar" id="filter" onclick="green()" oninput="filter_cl()" type="text" placeholder="Search or start a new chat">
                         <div class="sb pb-1 mt-1 ps-2 pe-2" onclick="refresh_cl()">
-                        <img src="./images/search.png" alt="" style="width: 12px;" id="search-icon">
+                            <img src="./images/search.png" alt="" style="width: 12px;" id="search-icon">
                         </div>
                     </div>
-                </div
+                </div>
 
-                <div class="mt" >
-
+                <div class="mt">
                     <div class="d-flex justify-content-between px-2 py-3" onclick="open_chat(this)" id="1">
                         <div class="d-flex ps-1">
                             <div class="d-picture">
@@ -240,7 +237,7 @@
                                 <img src="./images/dp5.jpg" alt="" class="w-24">
                             </div>
                             <div class="ms-3">
-                                <h6 class="p-0 m-0 d-name fw-semibold">Fidelix</h6>
+                                <h6 class="p-0 m-0 d-name fw-semibold">Fidelis</h6>
                                 <p class="p-0 m-0 fs-14 d-text">Enjoy life</p>
                             </div>  
                         </div>
@@ -320,18 +317,14 @@
             </div>
 
 
-            <div class="col-lg-7 col d-flex justify-content-center" style="background-color: #F9F9FA;" id="chat-body-info">
-                <div class="text-center w-50 d-flex flex-wrap align-content-between justify-content-center mt-info h-info position-fixed">
-                    <div class="w-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="90" viewBox="0 0 24 24" style="fill: rgba(204,204,204, 0.81);"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>
-                        <h6 class="mt-2 mb-2">WhatsApp for Windows</h6>
-                        <p class="m-0 fs-14">Send and receive messages without keeping your phone online.</p>
-                        <p class="fs-14">Use WhatsApp on up to 4 linked devices and 1 phone at the same time.</p>
-                    </div>
-        
-                    <div class="d-flex justify-content-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 24 24" style="fill: rgba(204, 204, 204, 0.96);"><path d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zm6 10 .002 8H6v-8h12zm-9-2V7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9z"></path></svg>
-                        <p class="f-12 ash ms-2">End-to-end encrypted</p>
+            <div class="col-lg-7 col d-flex justify-content-center" id="chat-body-info">
+                <div class="text-center w-75 d-flex flex-wrap align-items-center">
+                    <div class="">
+                        <h2 class="fw-bold  text-primary">Select a message</h2>
+                        <p class="">Choose from your existing conversations,
+                            start a new one, or just keep swimming.
+                        </p>
+                        <button class="w-50 py-2 fw-semibold rounded-5 btn btn-primary">New message</button>
                     </div>
                 </div>
             </div>
@@ -359,7 +352,6 @@
             </div>
 
         </div>
-          
     </div>
 
     <script src="./Bootstrap/js/bootstrap.bundle.js"></script>  
