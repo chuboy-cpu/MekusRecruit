@@ -24,11 +24,11 @@ div[active="true"], .neworder{
     text-decoration: none;
 }
 
-
+/* 
 body::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
-}
+/*} */
 
 .fit-height{ height: fit-content;}
 
