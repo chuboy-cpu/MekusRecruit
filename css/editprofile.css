@@ -32,10 +32,3 @@
 .labels {
     font-size: 11px
 }
-
-.add-experience:hover {
-    background: #0D6EFD;
-    color: #fff;
-    cursor: pointer;
-    border: solid 1px #0D6EFD;
-}
