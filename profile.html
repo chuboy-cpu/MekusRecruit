@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevRecruit</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mekus.css">
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+
+<body class="d-flex">
+
+    <div class="container position-fixed sidebar d-none d-xl-block">
+        <div class="row ps-3 pt-4">
+            <div class="col-12 profile d-flex align-items-center rounded-3 py-2">
+                <div>
+                    <img src="./images/cloud computing.jpg" class="rounded-2" alt="profile" width="55" height="47">
+                </div>
+
+                <div class="ms-3 me-2">
+                    <h6 class="mb-0 mt-1 fw-semibold">Joe J.</h6>
+                    <p class="mb-0 mt-1">Data Analyst</p>
+                </div>
+
+            </div>
+
+            <div class="col px-3 profile mt-3 pt-4 pb-sidebar rounded-3 d-flex flex-column gap-2">
+                <a href="./profile.html"><div class="d-flex rounded-3 py-2 pointer" active="true">
+                    <div class="mx-3 fit-height py-1">
+                        <img src="./images/profile.svg" alt="profile" class="" width="24">
+                    </div>
+                    <p class="py-1 m-0">Profile</p>
+                </div></a>
+
+                <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                    <div class="mx-3 fit-height py-1">
+                        <img src="./images/notification.svg" alt="notification" width="24">
+                    </div>
+                    <p class="py-1 m-0 sidebar-txt">Notification</p>
+                </div></a>
+
+                <a href="./message.html"><div class="d-flex rounded-3 py-2 pointer">
+                    <div class="mx-3 fit-height py-1">
+                        <img src="./images/message.svg" alt="message" width="24">
+                    </div>
+                    <p class="py-1 m-0 sidebar-txt">Message</p>
+                </div></a>
+
+                <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                    <div class="mx-3 fit-height py-1">
+                        <img src="./images/search.svg" alt="Search" width="24">
+                    </div>
+                    <p class="py-1 m-0 sidebar-txt">Connect</p>
+                </div></a>
+
+                <div class="d-flex rounded-3 py-2 pointer">
+                    <div class="mx-3 fit-height py-1">
+                        <img src="./images/bx-cog.svg" alt="setting" width="24">
+                    </div>
+                    <p class="py-1 m-0 sidebar-txt">Settings</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid body-with-both-sidebars mb-5">
+
+        <!-- RESPONSIVE NAVBAR FOR SMALL AND MEDIUM SCREEN -->
+        <nav class="navbar navbar-expand-xl d-xl-none">
+            <div class="container-fluid justify-content-start mt-2">
+
+              <button class="navbar-toggler text-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="row ps-3 pt-4">
+                    <div class="col-11 profile d-flex rounded-3 py-2">
+                        <div>
+                            <img src="./images/cloud computing.jpg" class="rounded-2" alt="profile" width="55" height="47">
+                        </div>
+        
+                        <div class="ms-3 me-2">
+                            <h6 class="mb-0 mt-1 fw-semibold">Joe J.</h6>
+                            <p class="mb-0 mt-1">Data Analyst</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-11 px-3 profile mt-3 pt-4 pb-5 rounded-3 d-flex flex-column gap-2">
+                        <a href="./profile.html"><div class="d-flex rounded-3 py-2 pointer" active="true">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/profile.svg" alt="profile" class="" width="24">
+                            </div>
+                            <p class="py-1 m-0">Profile</p>
+                        </div></a>
+        
+                        <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/notification.svg" alt="notification" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Notification</p>
+                        </div></a>
+
+                        <a href="./message.html"><div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/message.svg" alt="message" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Message</p>
+                        </div></a>
+        
+                        <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/search.svg" alt="Search" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Connect</p>
+                        </div></a>
+
+                        <div class="d-flex rounded-3 py-2 pointer">
+                            <div class="mx-3 fit-height py-1">
+                                <img src="./images/bx-cog.svg" alt="setting" width="24">
+                            </div>
+                            <p class="py-1 m-0 sidebar-txt">Settings</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+
+        <!-- PROFILE PAGE -->
+        
+        <div class="row mx-0 mt-4">
+
+            <div class="col-lg-12 pe-md-0">
+            
+                <div class="d-flex flex-md-row flex-column profilee pb-3">
+
+                    <div class="">
+
+                        <a href="#"><img class="mb-2" src="./images/profile picture.png" alt="profilepic" width="100"></a>
+                        <h5 class="mb-0">Jaden Joe</h5>
+                        <p class="text-muted mb-2">@jayden</p>
+
+                        <div class="d-flex flex-row">
+                            <div>
+                                <img src="./images/icons8-message-30.png" alt="message" width="18">
+                            </div>
+                            <p class="text-muted m-1">Jaden@email.com</p>
+                        </div>
+
+                        <div class="d-flex flex-row mb-2">
+                            <div>
+                                <img src="./images/icons8-calendar-50.png" alt="calendar" width="18">
+                            </div>
+                            <p class="text-muted ms-1">Joined June, 2023</p>
+                        </div>
+
+                        <div class="d-flex mt-0">
+                            <span class="fw-bold text-primary">15</span> <span class="ms-1 follow"> Following</span>
+                            <span class=" ms-3 fw-bold text-primary">5</span>  <span class="ms-1 follow"> Followers</span> 
+                        </div>
+
+                    </div>
+                    
+                    <div class="col text-end pt-md-5">
+                        <a href="./editprofile.html" class="btn btn-outline-primary mt-md-5 mt-3 rounded-5">Edit Profile</a>
+                    </div>
+                    
+                </div>
+            
+                <div class="card mb-3 shadow">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                            <h6 class="mb-0">Phone</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            +234 803 913 4590
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Address</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            12 Housing Estate, PortHarcourt.
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Role</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            Data Analyst
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">About</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            John Doe is a specialist for organizing data related to sales numbers, market research, logistics, linguistics, or other behaviors. He utilizes technical expertise to ensure data is accurate and high-quality. 
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Tools</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        Works with SQL, Microsoft Excel, SPSS & VBA and Jupyter Notebooks
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+
+   
+    <!-- RIGHT BAR -->
+    <div class="container-fluid position-fixed rightbar end-0 d-none d-md-block">
+        
+        <div class="col-12 mt-4 p-3 rounded-4">
+            <h5 class="text-primary-emphasis mb-4 mt-1">People with similar Interests</h5>
+
+            <div class="d-flex mb-2">
+
+                <div>
+                    <img src="./images/profile picture.png" alt="profilepic" width="50">
+                </div>
+
+                <div class="ms-3 p-0">
+                    <p class="fw-bold mb-0">Joel Jay</p>
+                    <p>Data Analyst</p>
+                </div>
+
+                <div class="col text-end">
+                    <a href="#" class="btn btn-primary rounded-5 px-3">Follow</a>
+                </div>
+
+            </div>
+
+            <div class="d-flex mb-2">
+
+                <div>
+                    <img src="./images/profile picture.png" alt="profilepic" width="50">
+                </div>
+
+                <div class="ms-3 p-0">
+                    <p class="fw-bold mb-0">Ben Arielle</p>
+                    <p>Data Analyst</p>
+                </div>
+
+                <div class="col text-end">
+                    <a href="#" class="btn btn-primary rounded-5 px-3">Follow</a>
+                </div>
+
+            </div>
+
+            <a href="#" class="text-decoration-none">Show more</a>
+
+        </div>
+
+        <div class="col-12 mt-4 p-3 rounded-4">
+            <h5 class="text-primary-emphasis mb-4">You might like</h5>
+
+            <div class="d-flex mb-2">
+
+                <div>
+                    <img src="./images/profile picture.png" alt="profilepic" width="50">
+                </div>
+
+                <div class="ms-3 p-0">
+                    <p class="fw-bold mb-0">Harry Kings</p>
+                    <p>Cloud Engineer</p>
+                </div>
+
+                <div class="col text-end">
+                    <a href="#" class="btn btn-primary rounded-5 px-3">Follow</a>
+                </div>
+
+            </div>
+
+            <div class="d-flex mb-2">
+
+                <div>
+                    <img src="./images/profile picture.png" alt="profilepic" width="50">
+                </div>
+
+                <div class="ms-3 p-0">
+                    <p class="fw-bold mb-0">Alexis Bryan</p>
+                    <p>Software Engineer</p>
+                </div>
+
+                <div class="col text-end">
+                    <a href="#" class="btn btn-primary rounded-5 px-3">Follow</a>
+                </div>
+
+            </div>
+
+            <a href="#" class="text-decoration-none">Show more</a>
+
+        </div>
+
+    </div>
+    
+    <script src="./Bootstrap/js/bootstrap.bundle.js"></script>  
+    <script src="./js/mekus.js"></script>
+</body>
+</html>

@@ -15,6 +15,20 @@ function toast(){
     })
 }
 
+function toasty(){
+  const toastTrigger = document.getElementById('liveToastBtn')
+  const toastLiveExample = document.getElementById('liveToastP')
+
+  if (toastTrigger) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+    toastBootstrap.show()
+  }
+  const myToastEl2 = document.getElementById('liveToastP')
+  myToastEl2.addEventListener('hidden.bs.toast', () => {
+    window.location.href = './profile.html'
+  })
+}
+
 // MODAL
 function modal (e){
     modal_pic = document.querySelector('.modal-pic');
@@ -73,4 +87,9 @@ function signup(){
     obj[email_email] = email;
 
     alert(obj[email_email])
+}
+
+function screen_height(){
+    let height = window.innerHeight;
+    document.getElementById("contact-box").style.maxHeight = height + "px";
 }

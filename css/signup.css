@@ -3,6 +3,14 @@ body{
     background-attachment: fixed;
 }
 
+@media screen and (max-width: 576px) {
+    body{
+        background-image: url(./../images/background\ image\ small.png);
+        background-attachment: fixed;
+    }
+
+}
+
 /* CARD FOR SIGN UP 1*/
 .card{
     transition: 0.5s ease-out;

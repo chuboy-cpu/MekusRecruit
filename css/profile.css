@@ -1,0 +1,123 @@
+.sidebar{
+    width: 250px;
+}
+
+.sidebar a, .navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.body{
+    margin-inline-start: 250px;
+    overflow-x: hidden;
+}
+
+.body-with-both-sidebars{
+    margin-inline-start: 250px;
+    margin-inline-end: 370px;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    .body-with-both-sidebars{
+        margin-inline-start: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body-with-both-sidebars{
+        margin-inline-end: 0px;
+    }
+}
+
+.profile{
+    background-color: #F8F8F8;
+}
+
+div[active="true"], .neworder{
+    color: #0D6EFD;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/* 
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+/*} */
+
+.fit-height{ height: fit-content;}
+
+.sidebar-txt{
+    color: #64748B;
+    font-size: 15px;
+}
+
+.pb-sidebar{
+    padding-block-end: 400px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .body{
+        margin-inline-start: 0px;
+    }
+
+}
+
+.w-24{ width: 50px; height: 50px; border-radius: 50%;}
+
+div.mt > div:hover{
+    background-color: #F6F6F6;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#contact-box{
+    overflow-y: scroll;
+}
+
+#contact-box::-webkit-scrollbar{
+    width: 8px;
+    margin-inline-start: 10px;
+}
+
+#contact-box::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+#contact-box::-webkit-scrollbar-thumb {
+    background: #76adff; 
+    border-radius: 15px;
+}
+
+.stickyy{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.974);
+    border: 1px solid white;
+}
+
+.search-bar{ 
+    width: 80%;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+
+.rightbar{
+    width: 370px;
+    overflow-x: hidden;
+}
+
+.rightbar > div{
+    background-color: #F8F8F8;
+}
+
+span.follow{
+    font-size: 16px;
+}
