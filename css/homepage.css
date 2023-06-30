@@ -12,6 +12,12 @@
     overflow-x: hidden;
 }
 
+.body-with-both-sidebars{
+    margin-inline-start: 250px;
+    margin-inline-end: 370px;
+    overflow-x: hidden;
+}
+
 .profile{
     background-color: #F8F8F8;
 }
@@ -89,4 +95,9 @@ div.mt > div:hover{
     font-size: 14px;
     outline: none;
     border: none;
+}
+
+.rightbar{
+    width: 370px;
+    overflow-x: hidden;
 }
