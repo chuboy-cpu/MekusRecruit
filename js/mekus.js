@@ -25,7 +25,7 @@ function toasty(){
   }
   const myToastEl2 = document.getElementById('liveToastP')
   myToastEl2.addEventListener('hidden.bs.toast', () => {
-    window.location.href = './homepage.html'
+    window.location.href = './profile.html'
   })
 }
 
