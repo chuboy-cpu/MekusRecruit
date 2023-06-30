@@ -18,6 +18,18 @@
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 1200px) {
+    .body-with-both-sidebars{
+        margin-inline-start: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body-with-both-sidebars{
+        margin-inline-end: 0px;
+    }
+}
+
 .profile{
     background-color: #F8F8F8;
 }
