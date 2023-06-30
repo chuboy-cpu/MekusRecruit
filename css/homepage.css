@@ -101,3 +101,7 @@ div.mt > div:hover{
     width: 370px;
     overflow-x: hidden;
 }
+
+.rightbar > div{
+    background-color: #F8F8F8;
+}
