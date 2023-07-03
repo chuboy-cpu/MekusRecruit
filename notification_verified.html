@@ -27,21 +27,20 @@
             </div>
 
             <div class="col px-3 profile mt-3 pt-4 pb-sidebar rounded-3 d-flex flex-column gap-2">
-                <a href="./profile.html"><div class="d-flex rounded-3 py-2 pointer" active="true">
+                
+                <a href="./profile.html"><div class="d-flex rounded-3 py-2 pointer">
                     <div class="mx-3 fit-height py-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="#0D6EFD" fill="#0D6EFD"
-                        fill-opacity="1" stroke-opacity="1">
-                        <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"/>
-                        </svg>
+                        <img src="./images/profile.svg" alt="profile" width="24">
                     </div>
-                    <p class="py-1 m-0">Profile</p>
+                    <p class="py-1 m-0 sidebar-txt">Profile</p>
                 </div></a>
 
-                <a href="./notification_all.html"><div class="d-flex rounded-3 py-2 pointer">
+                <a href="./notification_all.html"><div class="d-flex rounded-3 py-2 pointer" active="true">
                     <div class="mx-3 fit-height py-1">
-                        <img src="./images/notification.svg" alt="notification" width="24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="#0D6EFD" fill="#0D6EFD"
+                        fill-opacity="1" stroke-opacity="1"><path d="M12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"/></svg>
                     </div>
-                    <p class="py-1 m-0 sidebar-txt">Notification</p>
+                    <p class="py-1 m-0">Notification</p>
                 </div></a>
 
                 <a href="./message.html"><div class="d-flex rounded-3 py-2 pointer">
@@ -142,94 +141,42 @@
             
                 <div class="d-flex flex-md-row flex-column profilee pb-3">
 
-                    <div class="">
+                    <div class="mb-5">
 
-                        <a href="#"><img class="mb-2" src="./images/profile picture.png" alt="profilepic" width="100"></a>
-                        <h5 class="mb-0">Jaden Joe</h5>
-                        <p class="text-muted mb-2">@jayden</p>
-
-                        <div class="d-flex flex-row">
-                            <div>
-                                <img src="./images/icons8-message-30.png" alt="message" width="18">
-                            </div>
-                            <p class="text-muted m-1">Jaden@email.com</p>
-                        </div>
-
-                        <div class="d-flex flex-row mb-2">
-                            <div>
-                                <img src="./images/icons8-calendar-50.png" alt="calendar" width="18">
-                            </div>
-                            <p class="text-muted ms-1">Joined June, 2023</p>
-                        </div>
-
-                        <div class="d-flex mt-0">
-                            <span class="fw-bold text-primary">15</span> <span class="ms-1 follow"> Following</span>
-                            <span class=" ms-3 fw-bold text-primary">5</span>  <span class="ms-1 follow"> Followers</span> 
-                        </div>
-
+                        <h5 class="ps-1 pt-2 fw-semibold">Notifications</h5>
+                        
                     </div>
                     
-                    <div class="col text-end pt-md-5">
-                        <a href="./editprofile.html" class="btn btn-outline-primary mt-md-5 mt-3 rounded-5">Edit Profile</a>
+                    <div class="col text-end">
+                        <a href="#"><img src="./images/bx-cog.svg" alt="setting"></a>
                     </div>
                     
                 </div>
+
+                <div class="d-flex mb-0 border-bottom">
+                    <a href="./notification_all.html" class="mb-0 text-black text-decoration-none fw-bold col text-start">All</a>
+                    <a href="./notification_verified.html" class="mb-0 ms-3 text-decoration-none fw-bold col text-center">Verified</a>
+                    <a href="./notification_mention.html" class="mb-0 ms-4 text-black text-decoration-none fw-bold col text-end">Mentions</a>
+                </div>
             
-                <div class="card mb-3 shadow">
+                <div class="">
 
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-3">
-                            <h6 class="mb-0">Phone</h6>
+                    <div class="mt-2 d-flex border-bottom">
+                        <div class="ms-3">
+                            <img src="./images/logo.png" alt="logo" width="45">
                         </div>
-                        <div class="col-sm-9 text-secondary">
-                            +234 803 913 4590
-                        </div>
+                        <p class="ms-3"><strong>@Recruit</strong> has just been verified! 
+                            <br>See if you both share similar interests and follow them</p>
                     </div>
 
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Address</h6>
+                    <div class="mt-2 d-flex border-bottom">
+                        <div class="ms-3">
+                            <img src="./images/logo.png" alt="logo" width="45">
                         </div>
-                        <div class="col-sm-9 text-secondary">
-                            12 Housing Estate, PortHarcourt.
-                        </div>
+                        <p class="ms-3"><strong>@harrykings</strong> has just been verified! 
+                            <br>See if you both share similar interests and follow them</p>
                     </div>
 
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Role</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            Data Analyst
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">About</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            John Doe is a specialist for organizing data related to sales numbers, market research, logistics, linguistics, or other behaviors. He utilizes technical expertise to ensure data is accurate and high-quality. 
-                        </div>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Tools</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                        Works with SQL, Microsoft Excel, SPSS & VBA and Jupyter Notebooks
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
