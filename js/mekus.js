@@ -93,3 +93,8 @@ function screen_height(){
     let height = window.innerHeight;
     document.getElementById("contact-box").style.maxHeight = height + "px";
 }
+
+function screen_height_notify(){
+  let height = window.innerHeight;
+  document.getElementById("notify-box").style.maxHeight = height + "px";
+}

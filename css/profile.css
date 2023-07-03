@@ -75,8 +75,13 @@ div.mt > div:hover{
     cursor: pointer;
 }
 
-#contact-box{
+
+#contact-box, #notify-box{
     overflow-y: scroll;
+}
+
+#notify-box::-webkit-scrollbar{
+    display: none;
 }
 
 #contact-box::-webkit-scrollbar{
@@ -120,4 +125,13 @@ div.mt > div:hover{
 
 span.follow{
     font-size: 16px;
+}
+
+
+/* NOTIFICATION PAGE */
+
+.notifty-border{
+    border-left: 1px solid #B6D3FE;
+    border-bottom: 1px solid #B6D3FE;
+    border-right: 1px solid #B6D3FE;
 }
