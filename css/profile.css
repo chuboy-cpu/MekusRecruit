@@ -135,3 +135,10 @@ span.follow{
     border-bottom: 1px solid #B6D3FE;
     border-right: 1px solid #B6D3FE;
 }
+
+/* CONNECT PAGE */
+
+.connect-border{
+    border-left: 1px solid #B6D3FE;
+    border-right: 1px solid #B6D3FE;
+}

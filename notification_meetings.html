@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/profile.css">
 </head>
 
-<body class="d-flex">
+<body class="d-flex" onload="screen_height_notify()" onresize="screen_height_notify()">
 
     <div class="container position-fixed sidebar d-none d-xl-block">
         <div class="row ps-3 pt-4">
@@ -50,7 +50,7 @@
                     <p class="py-1 m-0 sidebar-txt">Message</p>
                 </div></a>
 
-                <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                <a href="./connect.html"><div class="d-flex rounded-3 py-2 pointer">
                     <div class="mx-3 fit-height py-1">
                         <img src="./images/search.svg" alt="Search" width="24">
                     </div>
@@ -99,7 +99,7 @@
                             <p class="py-1 m-0">Profile</p>
                         </div></a>
         
-                        <a href="#"><div class="d-flex rounded-3 py-2 pointer">
+                        <a href="./notification_all.html"><div class="d-flex rounded-3 py-2 pointer">
                             <div class="mx-3 fit-height py-1">
                                 <img src="./images/notification.svg" alt="notification" width="24">
                             </div>
@@ -136,43 +136,54 @@
         <!-- PROFILE PAGE -->
         
         <div class="row mx-0 mt-4">
-
-            <div class="col-lg-12 pe-md-0">
-            
-                <div class="d-flex flex-md-row flex-column profilee pb-3">
-
-                    <div class="mb-5">
-
-                        <h5 class="ps-1 pt-2 fw-semibold">Notifications</h5>
+            <div class="col-lg-12 pe-md-0" id="notify-box">
+                <div class="stickyy notifty-border">
+                    <div class="d-flex px-2 pt-2 justify-content-between pb-3">
+                        <h5 class="fw-semibold">Notifications</h5>
                         
                     </div>
-                    
-                    <div class="col text-end">
-                        <a href="#"><img src="./images/bx-cog.svg" alt="setting"></a>
+
+                    <div class="d-flex justify-content-around pb-3">
+                        <a href="./notification_all.html" class="text-black text-decoration-none fw-bold">All</a>
+                        <a href="./notification_meetings.html" class="text-decoration-none fw-bold">Meetings</a>
                     </div>
-                    
                 </div>
 
-                <div class="d-flex mb-0 border-bottom">
-                    <a href="./notification_all.html" class="mb-0 text-black text-decoration-none fw-bold col text-start">All</a>
-                    <a href="./notification_verified.html" class="mb-0 ms-3 text-black text-decoration-none fw-bold col text-center">Verified</a>
-                    <a href="./notification_mention.html" class="mb-0 ms-4 text-decoration-none fw-bold col text-end">Mentions</a>
-                </div>
-            
                 <div class="">
-
-                    <div class="mt-2 d-flex border-bottom">
-                        <div class="ms-3">
+                   
+                    <div class="d-flex pt-3 px-3 notifty-border">
+                        <div class="">
                             <img src="./images/logo.png" alt="logo" width="45">
                         </div>
-                        <p class="ms-3"><strong>@jaayb </strong>mentioned you.<br>Seems like the both of you share similar interests.</p>
+                        <p class="ms-3">You've been scheduled for an interview with DevRecruit.Ltd. Review for more details.</p>
                     </div>
 
-                    <div class="mt-2 d-flex border-bottom">
-                        <div class="ms-3">
+                    <div class="d-flex pt-3 px-3 notifty-border">
+                        <div class="">
                             <img src="./images/logo.png" alt="logo" width="45">
                         </div>
-                        <p class="ms-3">You were mentioned in four posts.<br>See those who mentioned you.</p>
+                        <p class="ms-3">You've been scheduled for an interview with daytech.Ltd Company. Review for more details.</p>
+                    </div>
+
+                    <div class="d-flex pt-3 px-3 notifty-border">
+                        <div class="">
+                            <img src="./images/logo.png" alt="logo" width="45">
+                        </div>
+                        <p class="ms-3">You've been scheduled for an interview with Recruitech.Ltd. Review for more details.</p>
+                    </div>
+                    
+                    <div class="d-flex pt-3 px-3 notifty-border">
+                        <div class="">
+                            <img src="./images/logo.png" alt="logo" width="45">
+                        </div>
+                        <p class="ms-3">You've been scheduled for an interview with DevRecruit.Ltd. Review for more details.</p>
+                    </div>
+
+                    <div class="d-flex pt-3 px-3 notifty-border">
+                        <div class="">
+                            <img src="./images/logo.png" alt="logo" width="45">
+                        </div>
+                        <p class="ms-3">You've been scheduled for an interview with DevRecruit.Ltd. Review for more details.</p>
                     </div>
 
                 </div>
@@ -221,7 +232,7 @@
 
             </div>
 
-            <a href="#" class="text-decoration-none">Show more</a>
+            <a href="./connect.html" class="text-decoration-none">Show more</a>
 
         </div>
 
@@ -262,7 +273,7 @@
 
             </div>
 
-            <a href="#" class="text-decoration-none">Show more</a>
+            <a href="./connect.html" class="text-decoration-none">Show more</a>
 
         </div>
 
